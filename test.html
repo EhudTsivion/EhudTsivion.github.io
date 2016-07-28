@@ -10,48 +10,98 @@
     <script src="javascripts/jquery-3.1.0.min.js"></script>
     <script src="javascripts/semantic.min.js"></script>
 
-    <script>
-        $(document)
-                .ready(function () {
-                    $('.ui.selection.dropdown').dropdown();
-                    $('.ui.menu .ui.dropdown').dropdown({
-                        on: 'hover'
-                    });
-                });
-    </script>
 </head>
-
-    <body>
-
-    <div class="ui menu">
-        <div class="header item">
-            Ehud Tsivion
-        </div>
-        <a class="item">
-            About
-        </a>
-        <a class="item">
-            Research
-        </a>
-        <a class="item">
-            Publications
-        </a>
-
-        <a class="item">
-            CV
-        </a>
-
-        <a class="item">
-            Gallery
-        </a>
-
+<!--<div class="ui left fixed vertical inverted red menu">-->
+<div class="ui top fixed  floated  menu">
+    <div class="header item">
+        Ehud Tsivion
     </div>
+    <a class="active item item">
+        <i class="user icon"></i>
+        About
+    </a>
+    <a class="item">
+        <i class="puzzle icon"></i>
+        Research
+    </a>
+    <a class="item">
+        <i class="announcement icon"></i>
+        Publications
+    </a>
+    <a class="item">
+        <i class="file text icon"></i>
+        CV
+    </a>
+    <a class="item">
+        <i class="photo icon"></i>
+        Gallery
+    </a>
+    <a class="item">
+        <i class="mail icon"></i>
+        Contact
+    </a>
+</div>
+<body>
 
-    <h1>Hello World</h1>
+<div class="ui grid container">
+    <div class="three wide floated column">
+    </div>
+    <div class="eight wide column ">
+        <div class="three wide column floated ">
+        </div>
+        <p>
+            <img class="ui small circular centered image" src="./etc/images/me_bad.jpg">
+        </p>
+        <p>
+        <h3 class="ui red center aligned header">An Experimentally Oriented Theoretical Chemist</h3>
 
-    <p>
-        Jamie was here.
-    </p>
+        <p>
+            My name is Ehud, but everyone calls me Udi.
+        <p>
+        <p>I grew up in a small Israeli town named <a id="GivatAda">"Givat Ada"</a> in an area that loosely resembles
+            the Napa Vally, i.e., surrounded by hills and vineyards. My first scientific
+            inquires involved burning of various house-hold materials in a series of experiments that yielded no
+            interesting results but provided plenty of entertainment.
+        </p>
+        <p>
+            A significant portion of my adulthood of more than five years, had been devoted for military service
+            and I was continuously been called to active reserve service, until I have left for the US.
+        </p>
+        <p>
+            I'm currently a post-doctocal scholar at UC Berkeley Chemsitry departmant and Maerial science devision
+            at Lawerence Berkeley National Laboratory, working with
+            <a href="http://www.cchem.berkeley.edu/mhggrp/Head-Gordon_Home.html"
+               data-content="Matt has been a member since July 2014">
+                Martin Head-Gordon</a>
+            on gas-adsorption in Metal-Organic Frameworks.
+        </p>
+        <p>
+            Before that I've been a graduate student with <a href="https://www.chem.uci.edu/people/r-benny-gerber">
+            Benny Gerber</a> at the Hebrew University of Jerusalem, working on the chemistry of the chemistry of
+            noble-gas containing molecules of the H-Ng-Y family.
+        </p>
+
+        <p>
+            If not is avalibe
+        </p>
+
+        <p>
+            Please have a look around this website and check out my scientific work as well as other cool things,
+            like pictures of me and my family.
+        </p>
+    </div>
+    <div class="ui basic modal" id="map-GA">
+        <div class="ui embed left floated"
+             data-url="https://www.google.com/maps/embed/v1/place?key=AIzaSyCJWtuXrKhxumL5RGodc8TeIJrlcIHfTQY&center=32.5206925,35.0051429&maptype=satellite&zoom=13&q=HaAgas+St+9,+Binyamina-Giv'at+Ada">
+        </div>
+    </div>
+    <script>
+        $('.ui.embed').embed();
+        $('.small.modal').modal();
+        $('#GivatAda').click(function(){$('.basic.modal').modal('show')});
+    </script>
+</div>
+
 
 </body>
 
