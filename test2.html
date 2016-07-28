@@ -21,7 +21,7 @@
         <i class="user icon"></i>
         About
     </a>
-    <a class="item">
+    <a class="item" id="research">
         <i class="puzzle icon"></i>
         Research
     </a>
@@ -58,11 +58,48 @@
         $('#content').load('./content/about.html');
     });
 
+    function load_content(obje, content_file) {
+        $('#content').load(content_file);
+        $(obje).siblings().removeClass('active');
+        $(obje).addClass('active');
+    };
+
     <!-- add menu functionality-->
-    $('#contact').click(function () {
-        $('#content').replaceWith('<p>Moshe</p>').load('./content/contact.html');
-        $('#contact').siblings().removeClass('active');
-        $('#contact').addClass('active');
-    });
+
+    $('#about').click(
+            function(){
+                load_content(this, './content/about.html')
+            }
+    );
+
+    $('#research').click(
+            function(){
+                load_content(this, './content/research.html')
+            }
+    );
+
+    $('#publications').click(
+            function(){
+                load_content(this, './content/publications.html')
+            }
+    );
+
+    $('#cv').click(
+            function(){
+                load_content(this, './content/cv.html')
+            }
+    );
+
+    $('#gallery').click(
+            function(){
+                load_content(this, './content/gallery.html')
+            }
+    );
+
+    $('#contact').click(
+            function(){
+                load_content(this, './content/contact.html')
+            }
+    );
 </script>
 </html>
