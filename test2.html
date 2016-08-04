@@ -13,31 +13,31 @@
 </head>
 
 <body>
-<div class="ui top fixed floated menu">
+<div class="ui top fixed floated massive menu">
     <div class="header item">
         Ehud Tsivion
     </div>
-    <a class="active item" id="about">
+    <a class="active item" id="about" href="#about">
         <i class="user icon"></i>
         About
     </a>
-    <a class="item" id="research">
+    <a class="item" id="research" href="#research">
         <i class="puzzle icon"></i>
         Research
     </a>
-    <a class="item" id="publications">
+    <a class="item" id="publications" href="#publications">
         <i class="announcement icon"></i>
         Publications
     </a>
-    <a class="item" id="cv">
+    <a class="item" id="cv" href="#cv">
         <i class="file text icon"></i>
         CV
     </a>
-    <a class="item" id="gallery">
+    <a class="item" id="gallery" href="#gallery">
         <i class="photo icon"></i>
         Gallery
     </a>
-    <a class="item" id="contact">
+    <a class="item" id="contact" href="#contact">
         <i class="mail icon"></i>
         Contact
     </a>
@@ -45,10 +45,9 @@
 
 <div class="ui grid container">
     <div class="three wide floated column"></div>
-    <div class="eight wide column">
-        <div id="content">
-
-        </div>
+    <div class="twelve wide column">
+        <div class="huge header">ss</div>
+        <div id="content"></div>
     </div>
 </div>
 </body>
@@ -62,44 +61,59 @@
         $('#content').load(content_file);
         $(obje).siblings().removeClass('active');
         $(obje).addClass('active');
-    };
+
+        var stateObj = { foo: "bar" };
+        history.pushState("", "", content_file);
+//        history.pushState(1, "content_file")
+    }
+    ;
 
     <!-- add menu functionality-->
 
     $('#about').click(
-            function(){
+            function () {
                 load_content(this, './content/about.html')
             }
     );
 
     $('#research').click(
-            function(){
+            function () {
                 load_content(this, './content/research.html')
             }
     );
 
     $('#publications').click(
-            function(){
+            function () {
                 load_content(this, './content/publications.html')
             }
     );
 
     $('#cv').click(
-            function(){
+            function () {
                 load_content(this, './content/cv.html')
             }
     );
 
     $('#gallery').click(
-            function(){
+            function () {
                 load_content(this, './content/gallery.html')
+                history.pushState('','','gallery')
             }
     );
 
     $('#contact').click(
-            function(){
+            function () {
                 load_content(this, './content/contact.html')
+                history.pushState('','','contact')
             }
     );
+
+    window.onpopstate = function(event) {
+//        var a = '#' + String(document.location).split('#').pop();
+//        $(a).click();
+//        alert(a);
+
+    };
+
 </script>
 </html>
