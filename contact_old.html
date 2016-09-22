@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meeta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/mystyle.css">
+
+    <script src="javascripts/jquery-3.1.0.min.js"></script>
+    <script src="javascripts/semantic.min.js"></script>
+
+</head>
+
+<body>
+<div id="menu"></div>
 <div class="ui grid container">
     <div class="row">
         <p></p>
@@ -36,3 +53,28 @@
     </div>
 
 </div>
+</body>
+<script>
+
+    $(document).ready(function () {
+        $("#menu").load('./content2/menu.html');
+//        $(document).ready(function () {
+        $("#about").addClass('active item'); // });
+    });
+
+    // could'nt do these any other way:
+
+    $('#email').click(function () {
+        document.location.href = "mailto:etsivion@berkeley.edu";
+    });
+
+    $('#phone').click(function () {
+        document.location.href = "tel:+1-510-982-1834";
+    });
+
+    $('#skype').click(function () {
+        document.location.href = "skype:ehud_tsivion?call";
+    });
+
+</script>
+</html>

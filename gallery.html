@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/mystyle.css">
+
+    <script src="javascripts/jquery-3.1.0.min.js"></script>
+    <script src="javascripts/semantic.min.js"></script>
+
+</head>
+
+<body>
+<div id="menu"></div>
+<div class="ui grid container">
+    <div class="row">
+        <p></p>
+        <p></p>
+    </div>
+    <div class="row">
+        <div class="three wide floated column"></div>
+        <div class="twelve wide column">
+            <h1 class="ui red header">My Family and Other Animals</h1>
+            Position the mouse on the photos to gen more explantions
+            <h2 class="ui header">With the kids</h2>
+            <p>My wife and I have three children: Dvir (6) Yotam (4) and Ahyia (2) and I enjoy
+                spending most of my non-work time with them. We especially like to hang-out in playgrounds
+                or eating at the local pizza.</p>
+            <div class="ui medium images" id="#cooling">
+                <a class="ui image" data-inverted="" data-tooltip="On the bus">
+                    <img src="./etc/images/kids/at_the_bus.jpg">
+                </a>
+                <a class="ui image" data-tooltip="Cooling off during a host israeli summer day">
+                    <img src="./etc/images/kids/cooling.jpg">
+                </a>
+                <a class="ui image" data-tooltip="Trip to Jerusalem">
+                    <img src="./etc/images/kids/Jerusalem.jpg">
+                </a>
+                <a class="ui image" data-tooltip="At the playground">
+                    <img src="./etc/images/kids/playground.jpg">
+                </a>
+            </div>
+            <h2 class="ui header">Other things</h2>
+            <p>
+                My wife and I have three children: Dvir (6) Yotam (4) and Ahyia (2) and I enjoy
+                spending most of my non-work time with them. We especially like to hang-out in playgrounds
+                or eating at the local pizza.
+            </p>
+            <div class="ui medium images" id="#cooling">
+                <a class="ui image" data-inverted="" data-tooltip="On the bus">
+                    <img src="./etc/images/kids/at_the_bus.jpg">
+                </a>
+                <a class="ui image" data-tooltip="Cooling off during a host israeli summer day">
+                    <img src="./etc/images/kids/cooling.jpg">
+                </a>
+                <a class="ui image" data-tooltip="Trip to Jerusalem">
+                    <img src="./etc/images/kids/Jerusalem.jpg">
+                </a>
+                <a class="ui image" data-tooltip="At the playground">
+                    <img src="./etc/images/kids/playground.jpg">
+                </a>
+            </div>
+
+            </p>
+            <a class="ui image" data-tooltip="At the playground" id="moshe">
+                <img src="./etc/images/udi/udi-good-2.jpg">
+            </a>
+        </div>
+
+
+    </div>
+
+</div>
+</body>
+<script>
+
+    $(document).ready(function () {
+        $("#menu").load('./content2/menu.html');
+//        $(document).ready(function () {
+        $("#gallery").addClass('active item'); // });
+
+    });
+
+    $('#moshe')
+            .visibility({
+                type: 'image',
+                transition: 'fade in',
+                duration: 1000,
+                continuous: 'True',
+                once: 'False'
+            })
+    ;
+</script>
+</html>

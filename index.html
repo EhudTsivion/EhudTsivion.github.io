@@ -6,43 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="stylesheets/semantic.min.css">
-    <link rel="stylesheet" type="text/css"
-          href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" type="text/css" href="stylesheets/mystyle.css">
 
     <script src="javascripts/jquery-3.1.0.min.js"></script>
     <script src="javascripts/semantic.min.js"></script>
-    <style>
-        p {
-            font-size: 1.3rem;
-        }
-    </style>
 
 </head>
 
 <body>
-<div id="menu"></div>
+<div class="ui fixed menu gray inverted">
+    <div class="header item">
+        Ehud Tsivion
+    </div>
+    <a class="item" id="about" href="./content/about.html">
+        <i class="user icon"></i>
+        About
+    </a>
+    <a class="ui dropdown item" id="research" href="./content/research.html">
+        <i class="puzzle icon"></i>
+        Research
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            <div class="item">Gas Adsorption</div>
+            <div class="item">Noble Gas Molecules in Nature(?)</div>
+        </div>
+    </a>
+    <a class="item load-content" id="publications" href="./content/publications.html">
+        <i class="announcement icon"></i>
+        Publications
+    </a>
+    <a class="item load-content" id="gallery" href="./content/gallery.html">
+        <i class="photo icon"></i>
+        Gallery
+    </a>
+    <a class="item load-content" id="contact" href="./content/contact.html">
+        <i class="mail icon"></i>
+        Contact
+    </a>
+</div>
 <div class="ui grid container">
     <div class="row">
-
+        <p></p>
+        <p></p>
     </div>
     <div class="row">
         <div class="three wide floated column"></div>
         <div class="twelve wide column">
-            <div id="content"></div>
+            <div id="center-content"></div>
         </div>
     </div>
-
 </div>
 </body>
+
 <script>
 
     $(document).ready(function () {
-        $('#content').load('./content/about.html');
-        $("#menu").load('./content2/menu.html');
-        $(document).ready(function () {
-            $("#about").addClass('active item'); });
+
+        $('.ui.dropdown').dropdown();
 
     });
 
 </script>
+<script src='./javascripts/historyNav.js'></script>
+
 </html>
