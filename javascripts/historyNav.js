@@ -12,7 +12,7 @@ window.onload = function() {
         // Check to make sure that this state object is not null.
         if (url) {
 
-            var content_address = ('./content/' + url + '.html');
+            var content_address = (url + '.html');
 
             main_content.load(content_address);
 

@@ -1,40 +1,25 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/mystyle.css">
-
-    <script src="javascripts/jquery-3.1.0.min.js"></script>
-    <script src="javascripts/semantic.min.js"></script>
-
-</head>
-
-<body>
-<div id="menu"></div>
-<div class="ui grid container">
-    <div class="row">
-        <p></p>
-        <p></p>
-    </div>
-    <div class="row">
-        <div class="three wide floated column"></div>
-        <div class="twelve wide column">
-            <div id="content"></div>
+<h4 class="ui red header">Examples of new and old research projects</h4>
+<div class="ui three column relaxed grid">
+    <div class="column">
+        <div class="ui raised segment">
+            <div class="ui move down reveal">
+                <div class="visible content">
+                    <img class="ui large image" src="./etc/images/wall-flip-w.png">
+                </div>
+                <div class="hidden content">
+                    Mosessss
+                </div>
+            </div>
         </div>
     </div>
-
+    <div class="column">
+        <div class="ui raised segment">
+            <img class="ui large image" src="./etc/images/wall-flip-w.png">
+        </div>
+    </div>
+    <div class="column">
+        <div class="ui raised segment">
+            <img class="ui large image" src="./etc/images/wall-flip-w.png">
+        </div>
+    </div>
 </div>
-</body>
-<script>
-
-    $(document).ready(function () {
-        $('#content').load('./content2/research.html');
-        $("#menu").load('./content2/menu.html');
-    });
-
-</script>
-</html>
