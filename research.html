@@ -1,25 +1,54 @@
-<h4 class="ui red header">Examples of new and old research projects</h4>
-<div class="ui three column relaxed grid">
-    <div class="column">
-        <div class="ui raised segment">
-            <div class="ui move down reveal">
-                <div class="visible content">
-                    <img class="ui large image" src="./etc/images/wall-flip-w.png">
-                </div>
-                <div class="hidden content">
-                    Mosessss
-                </div>
+<h1 class="ui red header">Past and Present Research Interests</h1>
+<p class="ui text">
+</p>
+<div class="ui divided items">
+    <div class="item">
+        <div class="ui small image">
+            <img src="./etc/images/publications/catCa-4H2-2w-website.png">
+        </div>
+        <div class="middle aligned content">
+            <a class="header">Physical adsorption and storage of H<sub>2</sub></a>
+            <div class="description">
+                Add text
             </div>
         </div>
     </div>
-    <div class="column">
-        <div class="ui raised segment">
-            <img class="ui large image" src="./etc/images/wall-flip-w.png">
+    <div class="item">
+        <div class="ui small image">
+            <img src="./etc/images/publications/MOf-5-paper.png">
+        </div>
+        <div class="middle aligned content">
+            <a class="header">Physical adsorption and storage of CH<sub>4</a>
+            <div class="description">
+                Add text
+            </div>
         </div>
     </div>
-    <div class="column">
-        <div class="ui raised segment">
-            <img class="ui large image" src="./etc/images/wall-flip-w.png">
+    <div class="item">
+        <div class="ui small image">
+            <img src="./etc/images/publications/MOf-5-paper.png">
+        </div>
+        <div class="middle aligned content">
+            <a class="header" id="hngy">Existance of Noble-Gas Compounds in Nature</a>
+            <div class="description">
+                Noble-gas compounds is an exotic group of materials which is
+                inherently metastable. Is it possible that they occur naturally?
+            </div>
         </div>
     </div>
 </div>
+
+<div class="ui long modal" id="HNgYResearch">
+
+</div>
+
+<script>
+
+    $('#HNgYResearch').load('./noble-gases.html');
+
+    $('#hngy').click(function () {
+        $('#HNgYResearch').modal({
+            inverted: true
+        }).modal('show')
+    });
+</script>

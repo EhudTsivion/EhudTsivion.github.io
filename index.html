@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="stylesheets/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/mystyle.css">
+    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/mystyle.css"> -->
 
     <script src="javascripts/jquery-3.1.0.min.js"></script>
     <script src="javascripts/semantic.min.js"></script>
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<div class="ui fixed menu gray inverted">
+<div class="ui fixed menu black inverted">
     <div class="header item">
         Ehud Tsivion
     </div>
@@ -22,14 +22,9 @@
         <i class="user icon"></i>
         About
     </a>
-    <a class="ui dropdown item" id="research" href="research.html">
+    <a class="item load-content" id="research" href="research.html">
         <i class="puzzle icon"></i>
-        Research
-        <i class="dropdown icon"></i>
-        <div class="menu">
-            <div class="item">Gas Adsorption</div>
-            <div class="item">Noble Gas Molecules in Nature(?)</div>
-        </div>
+        research
     </a>
     <a class="item load-content" id="publications" href="publications.html">
         <i class="announcement icon"></i>
@@ -62,7 +57,9 @@
 
     $(document).ready(function () {
 
-        $('.ui.dropdown').dropdown();
+        $('.ui.dropdown').dropdown({
+            action: 'hide'
+        });
 
     });
 

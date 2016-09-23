@@ -59,11 +59,11 @@
     <!-- // handling the Givat-Ada map -->
 
     $('.ui.embed').embed();
-    $('.small.modal').modal();
-    //
-    <!--I don't know if this is needed -->
+
     $('#GivatAda').click(function () {
-        $('.basic.modal').modal('show')
+        $('.basic.modal').modal({
+            inverted: true
+        }).modal('show')
     });
 
     $('#martin')
