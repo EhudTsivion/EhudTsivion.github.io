@@ -15,40 +15,47 @@
 
 <body>
 <div class="ui fixed menu black inverted">
-    <div class="header item">
-        Ehud Tsivion
+    <div class="ui container">
+
+        <div class="header item">
+            Ehud Tsivion
+        </div>
+        <a class="item" id="about" href="about.html">
+            <i class="user icon"></i>
+            About
+        </a>
+        <a class="item load-content" id="research" href="research.html">
+            <i class="puzzle icon"></i>
+            research
+        </a>
+        <a class="item load-content" id="publications" href="publications.html">
+            <i class="announcement icon"></i>
+            Publications
+        </a>
+        <a class="item load-content" id="gallery" href="gallery.html">
+            <i class="photo icon"></i>
+            Personal Gallery
+        </a>
+        <a class="item load-content" id="contact" href="contact.html">
+            <i class="mail icon"></i>
+            Contact
+        </a>
     </div>
-    <a class="item" id="about" href="about.html">
-        <i class="user icon"></i>
-        About
-    </a>
-    <a class="item load-content" id="research" href="research.html">
-        <i class="puzzle icon"></i>
-        research
-    </a>
-    <a class="item load-content" id="publications" href="publications.html">
-        <i class="announcement icon"></i>
-        Publications
-    </a>
-    <a class="item load-content" id="gallery" href="gallery.html">
-        <i class="photo icon"></i>
-        Gallery
-    </a>
-    <a class="item load-content" id="contact" href="contact.html">
-        <i class="mail icon"></i>
-        Contact
-    </a>
 </div>
 <div class="ui grid container">
+
+    <!-- This row is for top padding to allow floated/fixed menu -->
     <div class="row">
         <p></p>
         <p></p>
     </div>
+
     <div class="row">
-        <div class="two wide floated column"></div>
-        <div class="twelve wide column">
+
+        <div class="ui twelve wide column grid container">
             <div id="center-content"></div>
         </div>
+
     </div>
 </div>
 </body>

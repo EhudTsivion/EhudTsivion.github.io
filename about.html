@@ -1,70 +1,46 @@
-<p>
-    <img class="ui right small floated circular image" src="./etc/images/udi/udi-good.jpg">
-</p>
-<p>
-<h1 class="ui red header">Under construction!</h1>
-
-<p>
-    Hello, my name is Ehud, but everyone calls me Udi.
-<p>
-<p>I grew up in a small Israeli town named <a id="GivatAda">"Givat Ada"</a> in an area that loosely
-    resembles the Napa Vally, i.e., surrounded by hills and vineyards. My first scientific
-    inquires involved burning of various house-hold materials in a series of experiments that yielded no
-    interesting results but provided plenty of entertainment. I'm married to Efrat, a social worker
-    and a proud father of three.
-</p>
-<p>
-    A significant portion of my adulthood of more than five years, had been devoted for military service
-    and I was continuously been called to active reserve service, until I have left for the US.
-</p>
-<p>
-    I'm currently a post-doctocal scholar at UC Berkeley Chemsitry departmant and Maerial science devision
-    at Lawerence Berkeley National Laboratory, working with
-    <a href="http://www.cchem.berkeley.edu/mhggrp/Head-Gordon_Home.html" id="martin">Martin Head-Gordon</a>
-    on gas-adsorption in Metal-Organic Frameworks.
-</p>
-<p>
-    Before that I've been a graduate student with <a href="https://www.chem.uci.edu/people/r-benny-gerber" id="benny">
-    Benny Gerber</a> at the Hebrew University of Jerusalem, working on the chemistry of the chemistry of
-    noble-gas containing molecules of the H-Ng-Y family.
-</p>
-<p>
-    I'm interested in how molecules interact
-</p>
-
-<p>
-    In my free time (?) I enjoy...
-</p>
-
-<p>
-    Please have a look around this website and check out my scientific work as well as other cool things,
-    like pictures of me and my family.
-</p>
-<div class="ui basic modal" id="map-GA">
-    <div class="ui embed left floated"
-         data-url="https://www.google.com/maps/embed/v1/place?key=AIzaSyCJWtuXrKhxumL5RGodc8TeIJrlcIHfTQY&center=32.5206925,35.0051429&maptype=satellite&zoom=7&q=hamoshava,+Binyamina-Giv'at+Ada">
+<h2 class="ui blue header centered">This site is still under construction, but most of it is quite nice</h2>
+<div class="ui two column grid blue">
+    <div class="row">
+        <div class="column">
+            <h1 class="ui red header">About Me</h1>
+            <p><strong>My name is</strong> Ehud, but everyone calls me Udi.</p>
+            <p><strong>I live in</strong> Berkeley, California and but my home is in Modi'in, Israel.</p>
+            <p><strong>I work at</strong> the Department of Chemistry, University of California,
+                Berkeley and Materials Sciences Division, Lawrence Berkeley National Laboratory.
+            </p>
+            <p><strong>I am a</strong> Theoretical/Computational chemist interested in real-world problems.
+            </p>
+        </div>
+        <div class="column">
+            <img class="ui rounded medium image" src="./etc/images/udi/udi-good-2.jpg">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img class="ui rounded medium image" src="./etc/images/udi/Aragon.jpg">
+        </div>
+        <div class="column">
+            <h1 class="ui red header">Very Short Bio</h1>
+            <p>
+                As a graduate student with <a id="benny">
+                Benny Gerber</a> at the Hebrew University of Jerusalem, I explored the the chemistry
+                of the noble-gas containing molecules of the H-Ng-Y family.
+            </p>
+            <p>
+                Now, as a postdoc at UC Berkeley, I'm working with <a id="martin">Martin Head-Gordon</a>
+                on the theory of adsorption and storage of H<sub>2</sub> in
+                Metal-Organic Frameworks (MOFs).
+            </p>
+        </div>
     </div>
 </div>
+
 <!-- get images to cache to make them appear instantly in the popup -->
 <img class="hidden ui image"
      src="http://chemistry.berkeley.edu/sites/default/files/styles/panopoly_image_original/public/head-gordon-martin-300x400.jpg">
 <img class="hidden ui image" src="https://www.chem.uci.edu/sites/chem.uci.edu/files/Benny_Gerber_5877_0.jpg">
-<div class="ui special popup">
-    <div class="ui embed left floated"
-         data-url="https://www.google.com/maps/embed/v1/place?key=AIzaSyCJWtuXrKhxumL5RGodc8TeIJrlcIHfTQY&center=32.5206925,35.0051429&maptype=satellite&zoom=7&q=hamoshava,+Binyamina-Giv'at+Ada">
-    </div>
-</div>
 
 <script>
-    <!-- // handling the Givat-Ada map -->
-
-    $('.ui.embed').embed();
-
-    $('#GivatAda').click(function () {
-        $('.basic.modal').modal({
-            inverted: true
-        }).modal('show')
-    });
 
     $('#martin')
             .popup({
@@ -78,4 +54,13 @@
                 'chem.uci.edu/files/Benny_Gerber_5877_0.jpg"></p>'
             })
     ;
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-84751922-1', 'auto');
+    ga('send', 'pageview');
+
 </script>
