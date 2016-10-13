@@ -43,13 +43,14 @@
 </div>
 
 <script>
-
     $('#HNgYResearch').load('./noble-gases.html');
 
     $('#hngy').click(function () {
         $('#HNgYResearch').modal({
             inverted: true
         }).modal('show')
+        ga('create', 'UA-84751922-1', 'auto');
+        ga('send', 'pageview', 'noble-gases');
     });
 
     ga('create', 'UA-84751922-1', 'auto');
