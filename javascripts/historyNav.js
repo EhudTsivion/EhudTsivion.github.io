@@ -72,7 +72,12 @@ window.onload = function() {
     };
 
     // Attach click listeners for each of the nav links.
-    $('a[href]').click(function(e) {
+
+    // Only references that end with ".html" are selected
+    // this is to prevent from attaching this function
+    // to the links to Linkedin and Github
+
+    $("a[href$='.html']").click(function(e) {
 
         e.preventDefault();
 
@@ -88,7 +93,6 @@ window.onload = function() {
         history.pushState(url, 'moshe', get_base_url() + '#' + url);
 
     });
-
 
     window.onpopstate = function(event) {
 
